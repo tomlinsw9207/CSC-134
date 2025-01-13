@@ -17,5 +17,6 @@ Answer: Colin Mcrae
 
 #notes for jan 13 2025
 we had to make codespaces today, pick theme, cover commit and synch (push)
+internally wept
 
-TODO: look at public website to see changes
+TODID: look at public website to see changes
