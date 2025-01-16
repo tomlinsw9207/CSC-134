@@ -15,7 +15,9 @@ int main()
     cout << "but I'm transferring that to UNC Chapel Hill through CStep" << endl;
     cout << "" << endl;
     cout << "I like to read comic books and actual books too" << endl;
+    cout << "" << endl;
     cout << "Sometimes I do other things" << endl;
+    cout << "" << endl;
     cout << "Born to be a dweeb, forced to be a member of society" << endl;
     cout << "" << endl;
     cout << "" << endl; 
