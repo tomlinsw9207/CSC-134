@@ -20,3 +20,7 @@ we had to make codespaces today, pick theme, cover commit and synch (push)
 internally wept
 
 TODID: look at public website to see changes
+
+
+#updated January 22 2025
+snow day today, we're making dope ai songs
