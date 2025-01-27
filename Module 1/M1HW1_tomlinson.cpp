@@ -15,7 +15,7 @@ int main()
     //TODO
     cout << "The movie " << name;
     cout << " was released in the " << year;
-    cout << " and has made a total of " << priceGross;
+    cout << " and has made a total of $" << priceGross;
     cout << " million in the box office." << endl;
 return 0;
 }
