@@ -14,7 +14,7 @@ int main()
     // number of apples owned -- 100
     int apples = 100
     // price per apples -- 0.25
-    double PricePerApple = 0.25
+    double pricePerApple = 0.25
     // calculate the total price of apples
     // TODO
 
