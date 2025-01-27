@@ -10,11 +10,11 @@ int main()
 {
     // this program will simulate an apple orchard
     // the owner's name -- Lee Tomlinson
-    string name = "Lee Tomlinson"
+    string name = "Lee Tomlinson";
     // number of apples owned -- 100
-    int apples = 100
+    int apples = 100;
     // price per apples -- 0.25
-    double pricePerApple = 0.25
+    double pricePerApple = 0.25;
     // calculate the total price of apples
     // TODO
 
