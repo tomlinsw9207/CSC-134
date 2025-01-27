@@ -28,7 +28,8 @@ int main()
     cout << "Bananas are currently $";
     cout << pricePerBanana << " each." << endl;
     cout << "If you want all them banaynays, that will cost you a whopping $" << totalPrice << endl;
-    cout << "If you want two of them banaynays, that will be " << pricePerBanana * 2 << endl;
+    cout << "If you want three of them banaynays, that will be $" << pricePerBanana * 3 << endl;
+    cout << "If you want apples instead, then this here orchard ain't for you friend." << endl;
 
 
 return 0;
