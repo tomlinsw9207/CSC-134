@@ -17,7 +17,7 @@ int main()
     double pricePerBanana = 0.25;
     // calculate the total price of apples
     // TODO
-    double totalPrice = (double) bananas * pricePerBananas;
+    double totalPrice = (double) bananas * pricePerBanana;
 
     // print all the information about the orchard
     // TODO
