@@ -11,6 +11,7 @@ int main()
     string name = "\"Over The Hedge\"";
     string year = "2006";
     double priceGross = 339.8;
+    
  // intro and summary
     cout << "The movie " << name;
     cout << " was released in the year " << year << endl;
@@ -28,12 +29,21 @@ int main()
     cout << "My fave characters from " << name << endl;
     cout << "" << endl;
     cout << "  ~ Hammy the Squirrel" << endl;
-    cout << "  ~ Steve (the hedge)" << endl;
+    cout << "  ~ Steve the Hedge" << endl;
     cout << "  ~ Stella the Skunk" << endl;
-
+    cout << "" << endl;
+    cout << "" << endl;
  // favorite quotes
     cout << "My personal fave quotes from " << name << endl;
     cout << "" << endl;
     cout << "\"I can't be arrested! I'm the President of the Homeowners of Association!\" - Gladys (a homeowner/HOA President)" << endl;
+    cout << "" << endl;
+    cout << "\"I am a crazy, rabid squirrel! I want my cookies!\" - Hammy the Squirrel (not actually rabid)" << endl;
+    cout << "" << endl;
+    cout << "\"Please, Vincent! I'm just a desperate guy trying to feed his family!\" - RJ (racoon conartist)" << endl;
+    cout << "\"You don't have a family, RJ.\" - Vincent (stick in the mud tortoise)" << endl;
+    cout << "\"I meant a family of one.\" - RJ (still a racoon)" << endl;
+    cout << "" << endl;
+    
 return 0;
 }
