@@ -17,5 +17,10 @@ int main()
     cout << " was released in the year " << year;
     cout << " and has made a total of $" << priceGross;
     cout << " million in the box office." << endl;
+    cout << name;
+    cout << " is about a racoon named RJ, who has a large sum of debt." << endl;
+    cout << "RJ convinces a bunch of critters that live beside a human suburb to" << endl;
+    cout << "join him in numerous heists and scams, to gather food before they hibernate." << endl;
+    cout << "Little did they know that RJ had ulterior motives..." << endl;
 return 0;
 }
