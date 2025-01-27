@@ -24,10 +24,10 @@ int main()
     cout << "Welcome to " << name;
     cout << "'s banana orchard!" << endl;
     cout << "We have " << bananas;
-    cout << " apples in stock." << endl;
-    cout << "Apples are currently $";
+    cout << " bananas in stock." << endl;
+    cout << "Bananas are currently $";
     cout << pricePerBanana << " each." << endl;
-    cout << "If you want them all, that will be $" << totalPrice << endl;
+    cout << "If you want all them banaynays, that will cost you a whopping $" << totalPrice << endl;
 
 
 return 0;
