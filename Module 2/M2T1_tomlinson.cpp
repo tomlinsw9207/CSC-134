@@ -10,15 +10,12 @@ using namespace std;
 int main()
 {
    string name = "Lee Tomlinson"; // whatever name works
-    int bananas = 100;// number of banana owned -- 100
+    int bananas = 100; //number of banana owned -- 100
     double pricePerBanana = 0.25; // price per banana -- 0.25
     double totalPrice = (double) bananas * pricePerBanana; // calculates total cost of all bananas
 
     //TODO M2T1
     //ask for user input: 
-    //name 
-    //how many bananas they want
-    //charge them only for the bananas want
     string user_name; // who is buying the bananas
     int bananaswanted; // how many bananas they want
 
@@ -29,9 +26,7 @@ int main()
     
     // this line sets cout for doubles to 2 decimal places
     //have to put the line #include <iomanip> with other #include statements at the top for this to work
-    cout << setprecision(2) << fixed;
-    // calculate total price of what customer wants
-    double totalUser_Cost = (double) bananaswanted * pricePerBanana;
+    cout << setprecision(2) << fixed; 
 
     cout << "Welcome to " << name;
     cout << "'s banana orchard!" << endl;
@@ -46,12 +41,8 @@ int main()
     //take customers order 
     cout << "How many bananas would you like?" << endl;
     cin >> bananaswanted;
+    // calculate total price of what customer wants
+    double totalUser_Cost =  bananaswanted * pricePerBanana;
     cout << "Great! That will cost you $" << totalUser_Cost;
-
-
-
-
-
-
 
 }
