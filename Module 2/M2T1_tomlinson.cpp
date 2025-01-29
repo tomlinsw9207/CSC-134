@@ -4,7 +4,7 @@
 // January 29 2025
 
 #include <iostream>
-
+#include <iomanip>
 using namespace std;
 
 int main()
@@ -19,19 +19,19 @@ int main()
     //name 
     //how many bananas they want
     //charge them only for the bananas want
-    string Mike; //whos buying the bans
-    int bananaswanted;   // how many they want
+    string user_name; // who is buying the bananas
+    int bananaswanted; // how many bananas they want
 
     //greet customer
     cout << "Howdy! What's your name? ";
-    cin >> Mike;
-    cout << "Thanks for coming by, " << Mike << "!" << endl;
-
-
-
-
-
-
+    cin >> user_name;
+    cout << "Nice to meet you, " << user_name << endl;
+    
+    // this line sets cout for doubles to 2 decimal places
+    //have to put the line #include <iomanip> with other #include statements at the top for this to work
+    cout << setprecision(2) << fixed;
+    // calculate total price of what customer wants
+    double totalUser_Cost = (double) bananaswanted * pricePerBanana;
 
     cout << "Welcome to " << name;
     cout << "'s banana orchard!" << endl;
@@ -43,6 +43,11 @@ int main()
     cout << "If you want three of them banaynays, that will be $" << pricePerBanana * 3 << endl;
     cout << "If you want apples instead, then this here orchard ain't for you friend." << endl;
     
+    //take customers order 
+    cout << "How many bananas would you like?" << endl;
+    cin >> bananaswanted;
+    cout << "Great! That will cost you $" << totalUser_Cost;
+
 
 
 
