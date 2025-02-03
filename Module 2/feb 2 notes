@@ -5,3 +5,8 @@
 // int - means integer, or whole number
 // important words - if/else/while/for
 // for $ always 2 decimal places, also everything lines up.
+
+// amount of tax owed
+// 5.99 * 0.08 is 8 percent of 5.99
+// total after tax
+// price of item + percentage of 5.99
