@@ -1,5 +1,5 @@
 // CSC 134
-// M2HW1 
+// M2HW1 -- Question 1
 // Wendy "Lee" Tomlinson
 // February 10 2025
 
@@ -19,24 +19,25 @@ int main() {
     int account_number = 15685009;
     string fname;
     string lname;
-    string name = fname + lname;
 // prompt for name on the account and display account number
-    cout << "Please enter first and last name:";
+    cout << "Welcome to your bank! Please enter your first and last name: ";
     cin >> fname;
     cin >> lname;
     cout << endl;
-    cout << name << ", your account number is " << account_number << endl;
+    string name = fname + " " + lname;
+    cout << "Hello, " << name;
+    cout << "! Your account number is: " << account_number << endl;
     cout << endl;
 // prompt for start balance
-    cout << "Please enter your account balance:";
+    cout << "Please enter your account balance: $";
     cin >> start_balance;
     cout << endl;
 // prompt for deposit amount
-    cout << "Please enter desired deposit amount:";
+    cout << "Please enter desired deposit amount: $";
     cin >> deposit_amount;
     cout << endl;
 // prompt for withdraw amount
-    cout << "Please enter desired withdrawal amount:";
+    cout << "Please enter desired withdrawal amount: $";
     cin >> withdraw_amount;
     cout << endl;
     cout << endl;
@@ -51,5 +52,5 @@ int main() {
 
 
 
-
+return 0;
 }
