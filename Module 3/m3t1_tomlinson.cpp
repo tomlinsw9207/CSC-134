@@ -16,13 +16,13 @@ int main()
     double area1, area2;
 
     // ask kthe user for the length and width
-    cout << "What's the length of the first rectangle? ";
+    cout << "What's the length of the first rectangle (inches)? ";
     cin >> len1;
-    cout << "What's the width of the first rectangle? ";
+    cout << "What's the width of the first rectangle (inches)? ";
     cin >> wid1;
-    cout << "What's the length of the second rectangle? ";
+    cout << "What's the length of the second rectangle (inches) ? ";
     cin >> len2;
-    cout << "What's the width of the second rectangle? ";
+    cout << "What's the width of the second rectangle (inches)? ";
     cin >> wid2;
 
     // find the area
@@ -30,8 +30,8 @@ int main()
     area2 = len2 * wid2;
 
     // print the area
-    cout << "The area of the first rectangle is " << area1 << endl;
-    cout << "The area of the second rectangle is " << area2 << endl;
+    cout << "The area of the first rectangle is " << area1 << " square inches." << endl;
+    cout << "The area of the second rectangle is " << area2 << " square inches." << endl;
 
     return 0;
 }
