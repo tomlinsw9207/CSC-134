@@ -24,7 +24,8 @@ int main()
     cin >> len2;
     cout << "What's the width of the second rectangle (inches)? ";
     cin >> wid2;
-
+    cout << endl;
+    
     // find the area
     area1 = len1 * wid1;
     area2 = len2 * wid2;
