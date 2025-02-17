@@ -42,7 +42,7 @@ int main() {
     else if (area2 > area1) {
         cout << "The second one is larger." << endl;
     }
-    else if (area2 = area1) {
+    else {
         cout << "The rectangles are the same size." << endl;
     }
 
