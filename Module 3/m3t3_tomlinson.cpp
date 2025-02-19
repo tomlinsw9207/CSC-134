@@ -27,15 +27,15 @@ int main() {
     
     // rand() is a large number so we take the remainder which is %
     const int SIDES = 6;
-    int roll1, roll2, total;
+    int dice1, dice2, total;
 
-    roll1 = (rand() % SIDES) + 1;
-    cout << "First roll: " << roll1 << endl;
+    dice1 = (rand() % SIDES) + 1;
+    cout << "First roll: " << dice1 << endl;
 
-    roll2 = (rand() % SIDES) + 1;
-    cout << "Second roll: " << roll2 << endl;
+    dice2 = (rand() % SIDES) + 1;
+    cout << "Second roll: " << dice2 << endl;
 
-    total = roll1 + roll2;
+    total = dice1 + dice2;
     cout << "Your total roll is: " << total << endl;
 
 // craps game set up 
@@ -61,7 +61,23 @@ int main() {
 
 
     else {
-        cout << "Your point is " << total << " but we'll do that part later" << endl;
+        cout << "Your point is " << total << ". Roll again." << endl;
+
+        dice1 = (rand() % SIDES) + 1;
+        cout << "First roll: " << dice1 << endl;
+    
+        dice2 = (rand() % SIDES) + 1;
+        cout << "Second roll: " << dice2 << endl;
+    
+        int total2 = dice1 + dice2;
+        cout << "Your total roll is: " << total << endl;
+
+            if (total2 == 7) {
+                cout << "Craps! You lose." << endl;
+            }
+            else if (total2 == total) {
+                cout << "You win!" << endl;
+            }
     }
     return 0;
 }
