@@ -1,5 +1,5 @@
 // CSC 134
-// M3LAB1 --
+// M3LAB1 -- choices
 // Wendy "Lee" Tomlinson
 // February 24 2025
 
@@ -22,7 +22,7 @@ int main() {
     cout << "3. Straight" << endl;
     cout << "Type 1, 2, or 3: ";
     cin >> choice;
-
+    cout << endl;
 
     if (1 == choice) {
         chooseLeft();
@@ -37,6 +37,7 @@ int main() {
         cout << "Sorry, that isn't an option." << endl;
     }
 
+    cout << endl;
     cout << "Thanks for playing!" << endl;
 return 0;
 }
