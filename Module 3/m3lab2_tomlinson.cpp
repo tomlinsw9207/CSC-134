@@ -19,10 +19,13 @@ int main() {
     cout << endl;
 
     // find the letter grade
-
+    if (num_grade >=90 && num_grade <=100) {
+        letter_grade = "A";
+    }
+    
 
     // tell user the answer
-    cout << "Your grade of " << num_grade << " is a " << letter_grade << endl;
+    cout << "The grade of " << num_grade << " is a letter grade of " << letter_grade << endl;
 
 
 
