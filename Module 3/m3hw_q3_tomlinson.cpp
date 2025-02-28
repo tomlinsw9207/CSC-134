@@ -17,9 +17,9 @@ using namespace std;
 int main() {
 
     cout << "QUESTION 3" << endl;
+    cout << endl;
 
     // variables
-
     int choice1;     // 1 or 2 for first question
     int choice2;     // 1 or 2 for second question
 
@@ -34,12 +34,14 @@ int main() {
     cout << "Type 1 or 2: ";
     cin >> choice1;
     cout << endl;
+
     // if statements
     if (1 == choice1) {
         start1();
     }
     if (2 == choice1) {
         start2();
+        // second user prompt
         cout << "Do you take some with, or continue on without?" << endl;
         cout << "1. Take some water with you" << endl;
         cout << "2. Continue without it" << endl;
@@ -52,10 +54,6 @@ int main() {
             if (2 == choice2) {
                 option2();
             }
-            /*
-            else {
-                cout << "That isn't a valid option." << endl; // why is this line popping up? when selecting option1?
-            }*/
     }
     else {
         cout << "That isn't a valid option." << endl;
@@ -67,6 +65,7 @@ int main() {
 
     return 0;
 }
+
 
     // output for start1
     void start1() {
