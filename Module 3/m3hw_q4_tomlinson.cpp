@@ -2,12 +2,9 @@
 // m3hw -- QUESTION 4, math practice
 // Wendy "Lee" Tomlinson
 // March 3 2025
+// TIER GOLD
 
-/* TODO: 
-The program should generate two single digit numbers at random.
-The program should print out the numbers as a simple addition problem.
-The program should ask the user to enter the answer.
-Finally, the program will tell the user whether or not their answer was correct.*/
+
 
 #include <iostream>
 #include <cmath>

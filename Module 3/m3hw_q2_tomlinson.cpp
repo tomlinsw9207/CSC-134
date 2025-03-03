@@ -2,7 +2,7 @@
 // m3hw -- QUESTION 2
 // Wendy "Lee" Tomlinson
 // Feb 28 2025
-
+// TIER GOLD
 
 #include <iostream>
 #include <iomanip> // necessary for the 2 decimals

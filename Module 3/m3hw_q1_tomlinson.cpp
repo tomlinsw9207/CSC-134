@@ -2,6 +2,8 @@
 // m3hw -- QUESTION 1
 // Wendy "Lee" Tomlinson
 // Feb 26 2025
+// TIER GOLD
+
 
 #include <iostream>
 using namespace std;
