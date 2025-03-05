@@ -11,9 +11,7 @@ using namespace std;
 void program1();    // Gaddis program 5-3
 void program2();    // Gaddis program 5-6
 
-// main function
 int main() {
-
 
     // variables
     int choice;
@@ -54,6 +52,8 @@ int main() {
 // demonstrates simple while loop (Gaddis 5-3)
 void program1() {
     
+    // display looping words
+
     int number = 0;
 
     while (number <= 7) {
@@ -66,5 +66,20 @@ void program1() {
 
 // loop control variable (Gaddis 5-6)
 void program2() {
-    cout << "Program goes here";
+    
+    // display list of numbers and their squares
+    
+    const int MIN_NUMBER = 1;   // min number 
+    const int MAX_NUMBER = 10;  // max number
+
+    int num = MIN_NUMBER;   // LOOP COUNTER
+
+    cout << "Number       Number^2" << endl;
+    cout << "---------------------" << endl;
+
+    while (num <= MAX_NUMBER) {
+        cout << num << "\t\t" << (num * num) << endl;
+        num++; // increment the counter counter!!!
+    }
+
 }
