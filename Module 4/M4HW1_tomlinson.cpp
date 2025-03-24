@@ -106,7 +106,5 @@ void part3() {
             cout << table << " times " << n << " is " << product << endl;
     }
 
-
-
 }
 
