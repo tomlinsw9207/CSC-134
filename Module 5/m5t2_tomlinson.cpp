@@ -11,12 +11,12 @@ int square(int num);
 void printanswerline(int num1, int num2);
 
 int main() {
-
+    //cout << "Wake up" << endl;
     int num = 0;
-    while (num > 1 && num <= 10) {
+    while (num < 10) {
         num++;
         int answer = square(num);
-        printanswerline(3, 6);
+        printanswerline(num, answer);
 
     }
     
