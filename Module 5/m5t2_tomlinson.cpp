@@ -16,8 +16,9 @@ int main() {
     while (num < 10) {
         num++;
         int answer = square(num);
-        printanswerline(num, answer);
-
+        printanswerline(num, answer); 
+        // the variables in these parentheses are defined in main and then thrown into the void function to use.
+        // void function has its "own" variables because they're place holders for the stuff that gets thrown in from main
     }
     
 
