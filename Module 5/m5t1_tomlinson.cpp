@@ -15,11 +15,14 @@ int double_a_number(int number);
 
 int main() {
 
+    // variation one
     cout << "Hello main()!" << endl;
     first_message();        // call function
+    // variation two
     string user = "Mike";
     greet_user(user);       // passing the value "mike" not the actual variable of user/name
     cout << "back in main(), the name is " << user << endl;
+    // variation three
     int num;
     cout << "Enter and integer: ";
     cin >> num;
@@ -31,14 +34,16 @@ return 0;
 }
 
 // define functions here
+
+// variation one
 void first_message() {
     cout << "Hello from first_message()!" << endl;
 }
-
+// variation two
 void greet_user(string name) {
     cout  << "Hello, " << name << " from greet_user(string name)! " << endl;
 }
-
+// variation three for when its calculating something for you and throwing it back into the main() when its done
 int double_a_number(int number) {
     int answer = number * 2;
     return answer;  // must return an int
