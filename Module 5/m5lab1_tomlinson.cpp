@@ -16,7 +16,8 @@ void wait_for_rescue();
 
 // choice 2
 void follow_the_trail();
-
+void wait_to_pass();
+void go_around_it();
 //choice 3
 void set_up_camp();
 // TODO: add more choices here
@@ -45,9 +46,9 @@ void main_menu() {
   if (1 == choice) {
     make_own_path();
   } else if (2 == choice) {
-    // call choice 2 here
+    follow_the_trail();
   } else if (3 == choice) {
-    // call choice 3 here
+    set_up_camp();
   } else if (4 == choice) {
     cout << "Ok, quitting game" << endl;
     return; // go back to main()
@@ -81,17 +82,46 @@ void make_own_path() {
 }
 
 void turn_back() {
+    cout << "Try to turn back." << endl;
     cout << "You wander around, unable to find your way until you die of dehyrdation" << endl;
     return;
 }
-
 void wait_for_rescue() {
+    cout << "Wait for rescue." << endl;
     cout << "Search and rescue finds you in two days. You return home safe." << endl;
     return;
 }
 
 // start 2
-void follow_the_trail() { cout << "TODO: Write something here" << endl; }
+void follow_the_trail() { 
+    cout << "Follow the trail." << endl;
+    cout << "There is a moose on the trail ahead!" << endl;
+    cout << "Do you:" << endl;
+    cout << "1. Wait for it to pass" << endl;
+    cout << "2. Try to go around it" << endl;
+    int choice;
+    cout << "Choose: ";
+    cin >> choice;
+    if (1 == choice) {
+        wait_to_pass();
+      } else if (2 == choice) {
+        go_around_it();
+      }
+
+}
+
+void wait_to_pass() { 
+    cout << "Wait for it to pass" << endl;
+    cout << "The moose passes and you finish your hike in peace." << endl;
+    return;
+}
+void go_around_it() {
+    cout << "Try to go around it" << endl;
+    cout << "The moose tramples you because you were too close." << endl;
+    cout << "R.I.P" << endl;
+    return;
+}
+
 
 void set_up_camp() { cout << "TODO: Write something here" << endl; }
 
