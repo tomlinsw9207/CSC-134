@@ -20,6 +20,8 @@ void wait_to_pass();
 void go_around_it();
 //choice 3
 void set_up_camp();
+void build_a_fire();
+void explore_area();
 // TODO: add more choices here
 
 int main() {
@@ -123,6 +125,32 @@ void go_around_it() {
 }
 
 
-void set_up_camp() { cout << "TODO: Write something here" << endl; }
+void set_up_camp() { 
+    cout << "Set up camp" << endl;
+    cout << "You have some time before nightfall!" << endl; 
+    cout << "Do you:" << endl;
+    cout << "1. Build a fire" << endl;
+    cout << "2. Explore the area" << endl;
+    int choice;
+    cout << "Choose: ";
+    cin >> choice;
+    if (1 == choice) {
+        build_a_fire();
+      } else if (2 == choice) {
+        explore_area();
+      }
+}
 
+void build_a_fire() {
+    cout << "Build a fire" << endl;
+    cout << "You make a nice fire and have a pleasant evening before turning in for the night!" << endl;
+    return;
+}
+void explore_area() {
+    cout << "Explore the area" << endl;
+    cout << "You leave your stuff at the camp and wander for a few hours." << endl;
+    cout << "When you returnn to your campsite you find everything trashed by rabbid squirrels!" << endl;
+    cout << "All your food is gone and you have to end your trip early." << endl;
+    return;
+}
 // any new choices go here
