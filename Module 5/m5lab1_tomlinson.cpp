@@ -7,7 +7,6 @@
 #include <iostream>
 using namespace std;
 
-
 void main_menu();
 // choice 1
 void make_own_path();
@@ -22,7 +21,7 @@ void go_around_it();
 void set_up_camp();
 void build_a_fire();
 void explore_area();
-// TODO: add more choices here
+
 
 int main() {
   cout << "M5LAB1 - Choose Your Own Adventure" << endl;
@@ -124,7 +123,7 @@ void go_around_it() {
     return;
 }
 
-
+// start 3
 void set_up_camp() { 
     cout << "Set up camp" << endl;
     cout << "You have some time before nightfall!" << endl; 
@@ -153,4 +152,3 @@ void explore_area() {
     cout << "All your food is gone and you have to end your trip early." << endl;
     return;
 }
-// any new choices go here
