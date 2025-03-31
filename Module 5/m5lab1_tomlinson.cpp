@@ -55,6 +55,7 @@ void main_menu() {
     return; // go back to main()
   } else {
     cout << "That's not a valid choice, please try again." << endl;
+    cout << endl;
     cin.ignore(); // clear the user input
     main_menu();  // try again
   }
@@ -79,6 +80,11 @@ void make_own_path() {
     turn_back();
   } else if (2 == choice) {
     wait_for_rescue();
+  } else {
+    cout << "That's not a valid choice, please try again." << endl;
+    cout << endl;
+    cin.ignore(); // clear the user input
+    make_own_path();  // try again
   }
 }
 
@@ -107,6 +113,11 @@ void follow_the_trail() {
         wait_to_pass();
       } else if (2 == choice) {
         go_around_it();
+      } else {
+        cout << "That's not a valid choice, please try again." << endl;
+        cout << endl;
+        cin.ignore(); // clear the user input
+        follow_the_trail();  // try again
       }
 
 }
@@ -137,6 +148,11 @@ void set_up_camp() {
         build_a_fire();
       } else if (2 == choice) {
         explore_area();
+      } else {
+        cout << "That's not a valid choice, please try again." << endl;
+        cout << endl;
+        cin.ignore(); // clear the user input
+        set_up_camp();  // try again
       }
 }
 
