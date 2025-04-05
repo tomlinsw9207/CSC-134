@@ -82,10 +82,36 @@ void part1() {
     cout << "The average rainfall for " << month1 << ", " << month2 << ", and " << month3 << " is " << avgrainfall;
 }
 
+void part2() {
+    double length, width, height;
+    double volume;
+    bool posValue = true;
 
+    while (posValue == true) {
 
+        cout << "Please enter length: ";
+        cin >> length;
+        cout << endl;
+        cout << "Please enter width: ";
+        cin >> width;
+        cout << endl;
+        cout << "Please enter height: ";
+        cin >> height;
+        cout << endl;
 
-void part2() {}
+        if (length > 0 || width > 0 || height > 0) {
+            volume = length * width * height;
+            cout << "The volume is " << volume << endl;
+        }
+        else {
+            cout << "Please input a posotive number" << endl;
+            posValue = false;
+        }
+    }
+    // ask user for length width height
+    // calculate volume of 
+    // input validation no side can be zero or less
+}
 void part3() {}
 void part4() {}
 void part5() {}
