@@ -85,28 +85,30 @@ void part1() {
 void part2() {
     double length, width, height;
     double volume;
-    bool posValue = true;
+    bool calculate = true;
 
-    while (posValue == true) {
+    cout << "Please enter length: ";
+    cin >> length;
+    cout << endl;
+    cout << "Please enter width: ";
+    cin >> width;
+    cout << endl;
+    cout << "Please enter height: ";
+    cin >> height;
+    cout << endl;
 
-        cout << "Please enter length: ";
-        cin >> length;
-        cout << endl;
-        cout << "Please enter width: ";
-        cin >> width;
-        cout << endl;
-        cout << "Please enter height: ";
-        cin >> height;
-        cout << endl;
+    while (calculate == true) {
 
-        if (length > 0 || width > 0 || height > 0) {
+        if (length > 0 && width > 0 && height > 0) {
             volume = length * width * height;
-            cout << "The volume is " << volume << endl;
+            cout << "The block volume is " << volume << endl;
+            calculate = false;
         }
         else {
-            cout << "Please input a posotive number" << endl;
-            posValue = false;
+            cout << "Not valid options. Input posotive values" << endl;
+            return part2();
         }
+
     }
     // ask user for length width height
     // calculate volume of 
