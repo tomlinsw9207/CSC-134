@@ -85,8 +85,8 @@ void part1() {
 void part2() {
     double length, width, height;
     double volume;
-    bool calculate = true;
-
+    bool calculate = true;  // to end the loop
+    // these could go inside the loop? 
     cout << "Please enter length: ";
     cin >> length;
     cout << endl;
@@ -99,7 +99,7 @@ void part2() {
 
     while (calculate == true) {
 
-        if (length > 0 && width > 0 && height > 0) {
+        if (length > 0 && width > 0 && height > 0) {    //input validation
             volume = length * width * height;
             cout << "The block volume is " << volume << endl;
             calculate = false;
@@ -110,9 +110,6 @@ void part2() {
         }
 
     }
-    // ask user for length width height
-    // calculate volume of 
-    // input validation no side can be zero or less
 }
 void part3() {}
 void part4() {}
