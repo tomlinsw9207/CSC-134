@@ -175,7 +175,7 @@ void part3() {
         }
     }   
 }
-
+// FUNCTION FOR Q4
 void part4() {
 
     int selection;
@@ -187,18 +187,68 @@ void part4() {
     cout << "4. QUIT" << endl;
     cout << "Enter your choice (1 - 4): ";
     cin >> selection;
+    cout << endl;
+
     while (runprogram4 == true) {
 
         if (selection == 1) {
-        // ask for cirlce radius
-        //  area = π(the square of r). Use 3.14159
+            // ask for cirlce radius
+            double radius;
+            double circle_area;
+            const double PI = 3.14159;
+            cout << "Enter the radius of the circle: ";
+            cin >> radius;
+            if (radius > 0) {
+                cout << setprecision(2) << fixed;
+                circle_area = radius * radius * PI;
+                cout << "The area of the circle = " << circle_area << endl;
+                runprogram4 = false;
+            }
+            else {
+                cout << "Radius must be a positive value" << endl;
+                cout << endl;
+            }
         }
         else if (selection == 2) {
-        // ask for rectangle length and width
+            // ask for rectangle length and width
+            double length;
+            double width;
+            double rectangle_area;
+            cout << "Enter rectangle length: ";
+            cin >> length;
+            cout << endl;
+            cout << "Enter rectangle width: ";
+            cin >> width;
+            if (length > 0 && width > 0) {
+                cout << setprecision(2) << fixed;
+                rectangle_area = length * width;
+                cout << "The area of the rectangle = " << rectangle_area << endl;
+                runprogram4 = false;
+            }
+            else {
+                cout << "Length and width must be positive values" << endl;
+                cout << endl;
+            }
         }
         else if (selection == 3) {
-        // ask for triangle base and height
-        // area = base * height * .5
+            // ask for triangle base and height
+            double base;
+            double height;
+            double triangle_area;
+            cout << "Enter the triangle base: ";
+            cin >> base;
+            cout << "Enter the triangle height: ";
+            cin >> height;
+            if (base > 0 && height > 0) {
+                cout << setprecision(2) << fixed;
+                triangle_area = base * height * .5;
+                cout << "The area of the triangle = " << triangle_area << endl;
+                runprogram4 = false;
+            }
+            else {
+                cout << "The base and height must be positive values" << endl;
+                cout << endl;
+            }
         }
         else if (selection == 4) {
             cout << "Quitting program. Bye!" << endl;
@@ -209,8 +259,5 @@ void part4() {
             return part4();
         }
     }
-
-
-
 }
 void part5() {}
