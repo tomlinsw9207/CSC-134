@@ -3,6 +3,8 @@
 // Wendy "Lee" Tomlinson
 // 2 april 2025
 
+// ADD COUT QUESTION LABELS TO EACH PROGRAM
+
 void part1();
 void part2();
 void part3();
@@ -174,6 +176,41 @@ void part3() {
     }   
 }
 
+void part4() {
 
-void part4() {}
+    int selection;
+    bool runprogram4 = true;
+    cout << "Geometry Calculator" << endl;
+    cout << "1. Calculate the area of a circle" << endl;
+    cout << "2. Calculate the area of a rectangle" << endl;
+    cout << "3. Calculate the area of a triangle" << endl;
+    cout << "4. QUIT" << endl;
+    cout << "Enter your choice (1 - 4): ";
+    cin >> selection;
+    while (runprogram4 == true) {
+
+        if (selection == 1) {
+        // ask for cirlce radius
+        //  area = π(the square of r). Use 3.14159
+        }
+        else if (selection == 2) {
+        // ask for rectangle length and width
+        }
+        else if (selection == 3) {
+        // ask for triangle base and height
+        // area = base * height * .5
+        }
+        else if (selection == 4) {
+            cout << "Quitting program. Bye!" << endl;
+            runprogram4 = false;
+        }
+        else {
+            cout << "That is not a valid selection. Choose a number 1 through 4" << endl;
+            return part4();
+        }
+    }
+
+
+
+}
 void part5() {}
