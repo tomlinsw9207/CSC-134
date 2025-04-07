@@ -24,7 +24,13 @@ int main() {
 
         cout << endl;
         cout << "Select question part:" << endl;
-        cout << "1. part 1, 2. part 2, 3. part 3, 4. part 4, 5. part 5 0. to quit ";
+        cout << "1. Question 1" << endl;
+        cout << "2. Question 2" << endl;
+        cout << "3. Question 3" << endl;
+        cout << "4. Question 4" << endl;
+        cout << "5. Question 5" << endl;
+        cout << "0. QUIT" << endl;
+        cout << "Select: ";
         cin >> selection;
 
         if (selection == 1) {
@@ -44,7 +50,7 @@ int main() {
             cout << endl;
         }
         else if (selection == 5) {
-            part4();
+            part5();
             cout << endl;
         }
         else if (selection == 0) {
@@ -66,7 +72,7 @@ double avgRainfall(double num1, double num2, double num3) {
     return avgrainfall;
 }
 void part1() {
-
+    cout << "QUESTION 1" << endl;
     double avgrainfall;
     string month1, month2, month3;
     double rfm1, rfm2, rfm3;    // rain fall per month #
@@ -86,6 +92,7 @@ void part1() {
 
 // FUNCTION FOR Q2
 void part2() {
+    cout << "QUESTION 2" << endl;
     double length, width, height;
     double volume;
     bool calculate = true;  // to end the loop
@@ -119,6 +126,7 @@ void part2() {
 void part3() {
     // ask user for an int 1-10
     // display roman numeral version
+    cout << "QUESTION 3" << endl;
     int num;
     bool runprogram3 = true;
     cout << "Enter any integer 1 - 10: ";
@@ -177,7 +185,7 @@ void part3() {
 }
 // FUNCTION FOR Q4
 void part4() {
-
+    cout << "QUESTION 4" << endl;
     int selection;
     bool runprogram4 = true;
     cout << "Geometry Calculator" << endl;
@@ -260,4 +268,22 @@ void part4() {
         }
     }
 }
-void part5() {}
+// FUNCTION FOR Q5
+void part5() {
+    cout << "QUESTION 5" << endl;
+    int speed;
+    double total_time_elapsed;
+    double distance_per_hour;
+    cout << "Enter the speed of the vehicle (mph): ";
+    cin >> speed;
+    cout << endl;
+    cout << "Enter the hours spent traveling: ";
+    cin >> total_time_elapsed;
+
+    int hour = 0;
+    while (hour < total_time_elapsed && total_time_elapsed > 0 && speed > 0) {
+        hour++;
+        distance_per_hour = hour * speed;
+        cout << "Hour: " << hour << "   Distance Traveled: " << distance_per_hour << endl;
+    }
+}
