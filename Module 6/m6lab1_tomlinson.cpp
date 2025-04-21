@@ -15,8 +15,8 @@ int main() {
     const int BLACK  = 2;
     const int EMPTY = 0;    // need with an array
 
-    // example one
-    int magazine[] = {RED, BLACK, BLACK, RED};
+    // example one using a basic array
+    int magazine[] = {BLACK, BLACK, RED, RED};
     for (int shell : magazine) {
         string shellname;
         if (shell == BLACK) {
