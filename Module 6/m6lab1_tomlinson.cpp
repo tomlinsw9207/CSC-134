@@ -45,6 +45,7 @@ int main() {
     // eject a shell
      mag.pop_back(); // this removes the last shell
      num_shells--;
+     
      // repeat
      current_shell = mag.at(num_shells-1);
      cout << "Next shell: " << current_shell << endl;
