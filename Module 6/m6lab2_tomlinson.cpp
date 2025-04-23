@@ -71,10 +71,10 @@ int main() {
     connections[CAMP_ENTRANCE][WEST] = DINING_PAVILION;      // Entrance Hall -> West -> DINING_PAVILION
     
     // AMPITHEATRE connections
-    connections[AMPITHEATRE][NORTH] = -1;               // No connection north
+    connections[AMPITHEATRE][NORTH] = DINING_PAVILION;   // AMPITHEATRE -> North -> dining pavilion
     connections[AMPITHEATRE][EAST] = -1;                // No connection east
     connections[AMPITHEATRE][SOUTH] = CAMP_ENTRANCE;    // AMPITHEATRE -> South -> Entrance Hall
-    connections[AMPITHEATRE][WEST] = -1;                // No connection west
+    connections[AMPITHEATRE][WEST] = -1;                // no connection west
     
     // SHED connections
     connections[SHED][NORTH] = -1;               // No connection north
@@ -85,7 +85,7 @@ int main() {
     // DINING_PAVILION connections
     connections[DINING_PAVILION][NORTH] = -1;                // No connection north
     connections[DINING_PAVILION][EAST] = CAMP_ENTRANCE;      // DINING_PAVILION -> East -> Entrance Hall
-    connections[DINING_PAVILION][SOUTH] = -1;                // No connection south
+    connections[DINING_PAVILION][SOUTH] = AMPITHEATRE;                // Dining pavilion -> South -> ampitheatre
     connections[DINING_PAVILION][WEST] = -1;                 // No connection west
     
     // MAIN_HOUSE connections
