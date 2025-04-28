@@ -41,7 +41,17 @@ class Restaurant {
         cout << "Rating: ";
         // TODO: Print the stars as "*"
         cout << this->rating << endl;
+
+        int fullstar = static_cast<int>(rating); // whole number part
+        bool halfstar = (rating - fullstar) >= 0.5; // checks for a half star
         
+        for (int i = 0; i < fullstar; i++) {
+            cout << "🌕";
+        }
+        if (halfstar) {
+            cout << "🌗";
+        }
+
 
       }
     
