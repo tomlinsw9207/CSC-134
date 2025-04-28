@@ -46,12 +46,16 @@ class Restaurant {
       Restaurant rest2 = Restaurant ();
       cout << "Enter restaurant name: ";
       string name;
-      cin >> name;
+      // this trick lets us get names with spaces in them
+      cin.ignore(); // skip extra new line
+      getline(cin, name); // reads entire line
       rest2.setName(name);
       cout << "Enter restaurant rating: ";
       double rating;
       cin >> rating;
       rest2.setRating(rating);
+
+    
 
 
   
