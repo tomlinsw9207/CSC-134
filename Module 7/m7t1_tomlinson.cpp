@@ -51,8 +51,7 @@ class Restaurant {
         if (halfstar) {
             cout << "🌗";
         }
-
-
+        cout << endl;
       }
     
   };
