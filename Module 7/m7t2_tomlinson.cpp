@@ -55,12 +55,18 @@ int main() {
     cout << "Enter length: ";
     cin >> len;
 
-    Rectangle r1 = Rectangle();
-    r1.setWidth(wid);
-    r1.setLength(len);
+    if (len > 0 && wid > 0) {
+        Rectangle r1 = Rectangle();
+        r1.setWidth(wid);
+        r1.setLength(len);
+        cout << "The area is: " << r1.getArea() << endl;
+    }
+    else {
+        cout << "Positive numbers only. Try again" << endl;
+        cout << endl;
+        return main();
+    }
 
-    cout << "The area is: " << r1.getArea() << endl;
-    
 
     return 0;
 }
