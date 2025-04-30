@@ -12,6 +12,7 @@
 #include <vector>
 #include <algorithm>
 #include <string>
+#include <sstream>
 
 using namespace std;
 
@@ -25,7 +26,6 @@ class Book {
     public: 
         // constructor
         Book(string t, string a, string g, bool r) : title(t), authorLastName(a), genre(g), isRead(r) {}
-
         // getters
         string getTitle() const {
             return title;
@@ -39,7 +39,6 @@ class Book {
         bool getReadStatus() const {
             return isRead;
         }
-
         // setters
         void setTitle(const string& newTitle) {
             title = newTitle;
@@ -52,5 +51,28 @@ class Book {
         }
         void setReadStatus(bool status) {
             isRead = status;
+        }
+        
+        // string to file conversion [WIP]
+        string toFileString() const {
+            return title + " | " + authorLastName + " | " + genre + " | " + (isRead ? "1" : "0");
+        }
+        // file string to object conversion
+        static Book fromFileString(const string& line) {
+            string title, author, genre;
+            bool isRead;
+            stringstream ss(line);
+            getline(ss, title, '|');
+            getline(ss, author, '|');
+            getline(ss, genre, '|');
+            int readInt;
+            ss >> readInt;
+            isRead = (readInt==1);
+            return Book(title, author, genre, isRead);
+        }
+        // display book details
+        void displayBook() const {
+            cout << "Title: " << title << ", Author: " << authorLastName << ", Genre: " << genre 
+            << ", Read: " << (isRead ? "Yes" : "No" ) << endl;
         }
 };
