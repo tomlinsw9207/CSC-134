@@ -1,11 +1,13 @@
 // csc 134
 // m7 t2
 // Wendy "Lee" Tomlinson
+// 30 april 2025
+// GOLD ATTEMPT
+
+
 // these and the last safety thing so that the compiler doesnt include this file more than ONCE
 #ifndef RECTANGLE_H
 #define RECTANGLE_H
-
-
 
 class Rectangle {
     private: 
