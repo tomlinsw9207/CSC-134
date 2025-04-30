@@ -2,6 +2,7 @@
 // m7 t2 - gaddis rectangle program
 // Wendy "Lee" Tomlinson
 // 30 april 2025
+// GOLD ATTEMPT
 
 #include <iostream>
 #include "rectangle.h" // use "" not <> when its ur own file
