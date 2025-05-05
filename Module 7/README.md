@@ -4,7 +4,7 @@ MODULE 7 MINI PROJECT NOTES
 Aspects wanted in the program:
 
 - catalogue books with the option to add more
-- have program alphabetically organize them for me?
+- have program alphabetically organize them for me
 
 - categorize books 
 - by author name
@@ -12,6 +12,12 @@ Aspects wanted in the program:
 - as read or unread
 - by lexile?
 - by wordcount?
+
+MUST HAVE:
+- ability to add new books
+- ability to mark books as read
+- sort and display books by alphabetical author last name
+- include genre
 
 copilot help 4/30
 PROMPT:
