@@ -76,3 +76,10 @@ class Book {
             << ", Read: " << (isRead ? "Yes" : "No" ) << endl;
         }
 };
+
+// TODO: set up main menu with input validation
+// finish pseudo code for the rest of the program
+int main(){
+
+
+}
