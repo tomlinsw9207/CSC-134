@@ -97,6 +97,54 @@ void loadBooks(vector<Book>& books, const string& library) {
     file.close();
 }
 
+// Add a book
+void addBook(vector<Book>& books) {
+    string title, author, genre;
+    bool isRead;
+
+    cout << "Enter book title: ";
+    getline(cin, title);
+    cout << "Enter author's last name: ";
+    getline(cin, author);
+    cout << "Enter genre: ";
+    getline(cin, genre);
+    cout << "Have you read this book? (1 for Yes, 0 for No): ";
+    cin >> isRead;
+
+    books.emplace_back(title, author, genre, isRead);
+}
+
+// Edit existing book
+void editBook(vector<Book>& books) {
+    string searchTitle;
+    cout << "Enter title of the book you want to edit: ";
+    getline(cin, searchTitle);
+
+    for (auto& book : books) {
+        if (book.getTitle() == searchTitle) {
+            cout << "Editing book: " << book.getTitle() << endl;
+            cout << "Edit author's last name (press Enter to keep current): ";
+            string newAuthor;
+            getline(cin, newAuthor);
+            if (!newAuthor.empty()) book.setAuthorLastName(newAuthor);
+
+            cout << "Edit genre (press Enter to keep current): ";
+            string newGenre;
+            getline(cin, newGenre);
+            if (!newGenre.empty()) book.setGenre(newGenre);
+
+            cout << "Read/unread? (1 for read, 0 for unread): ";
+            int readChoice;
+            cin >> readChoice;
+            book.setReadStatus(readChoice == 1);
+
+            cout << "Book updated successfully!" << endl;
+            return;
+        }
+    }
+    cout << "Book not found" << endl;
+}
+
 
 int main() {
 
@@ -117,15 +165,17 @@ int main() {
         cout << "3. Display all books" << endl;
         cout << "4. Display all books by read status" << endl;
         cout << "5. Save & exit" << endl;
-        cout << "Selection: ";
+        cout << "Enter selection: ";
         cin >> choice;
         cout << endl;
 
         if (choice == 1) {
             // add new book
+            addBook(books);
         }
         else if (choice == 2) {
             // edit existing book
+            editBook(books);
         }
         else if (choice == 3) {
             // display all books (alphabetically)
