@@ -103,15 +103,20 @@ void loadBooks(vector<Book>& books, const string& library) {
 
 // add new book
 void addBook(vector<Book>& books) {
-    string title, author, genre;
     bool isRead;
 
     cout << "Enter book title: ";
+    string title;
     getline(cin, title);
+
     cout << "Enter author last name: ";
+    string author;
     getline(cin, author);
+
     cout << "Enter genre: ";
+    string genre;
     getline(cin, genre);
+    
     cout << "Mark this read? (1 for read, 0 for unread): ";
     cin >> isRead;
 
