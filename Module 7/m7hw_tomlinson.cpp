@@ -23,7 +23,6 @@ class Book {
         string authorLastName;
         string genre;
         bool isRead;
-    
     public: 
         // constructor
         Book(string t, string a, string g, bool r) {
@@ -92,7 +91,7 @@ void saveBooks(const vector<Book>& books, const string& library) {
     file.close();
 }
 
-// Load books from a .txt file
+// Load books from library.txt file
 void loadBooks(vector<Book>& books, const string& library) {
     ifstream file(library);
     string line;
@@ -102,18 +101,18 @@ void loadBooks(vector<Book>& books, const string& library) {
     file.close();
 }
 
-// Add a book
+// add new book
 void addBook(vector<Book>& books) {
     string title, author, genre;
     bool isRead;
 
     cout << "Enter book title: ";
     getline(cin, title);
-    cout << "Enter author's last name: ";
+    cout << "Enter author last name: ";
     getline(cin, author);
     cout << "Enter genre: ";
     getline(cin, genre);
-    cout << "Have you read this book? (1 for Yes, 0 for No): ";
+    cout << "Mark this read? (1 for read, 0 for unread): ";
     cin >> isRead;
 
     books.emplace_back(title, author, genre, isRead);
@@ -138,16 +137,26 @@ void editBook(vector<Book>& books) {
             getline(cin, newGenre);
             if (!newGenre.empty()) book.setGenre(newGenre);
 
-            cout << "Read/unread? (1 for read, 0 for unread): ";
+            cout << "Mark this read? (1 for read, 0 for unread): ";
             int readChoice;
             cin >> readChoice;
             book.setReadStatus(readChoice == 1);
 
-            cout << "Book updated successfully!" << endl;
+            cout << "Book updated!" << endl;
             return;
         }
     }
     cout << "Book not found" << endl;
+}
+
+void displaySortedByAuthor(vector<Book>& books) {
+    cout << "Book Collection:" << endl;
+    for (const auto& book : books) {
+        sort(books.begin(), books.end(), [](const Book& a, const Book& b) {
+            return a.getAuthorLastName() < b.getAuthorLastName();
+        });
+        book.displayBook();
+    }
 }
 
 
@@ -175,21 +184,22 @@ int main() {
         cout << endl;
 
         if (choice == 1) {
-            // add new book
+            // adds new book
             addBook(books);
         }
         else if (choice == 2) {
-            // edit existing book
+            // edits existing book
             editBook(books);
         }
         else if (choice == 3) {
-            // display all books (alphabetically)
+            // displays all books (alphabetically)
+            displaySortedByAuthor(books);
         }
         else if (choice == 4) {
-            // display all books that are read or unread
+            // displays all books that are read or unread
         }
         else if (choice == 5) {
-            // save data and exit program
+            // saves data and exit program
             saveBooks(books, library);
             cout << "Books are saved! See ya!" << endl;
             keepgoing = false;
