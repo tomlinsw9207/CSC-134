@@ -26,7 +26,12 @@ class Book {
     
     public: 
         // constructor
-        Book(string t, string a, string g, bool r) : title(t), authorLastName(a), genre(g), isRead(r) {}
+        Book(string t, string a, string g, bool r) {
+            title = t;
+            authorLastName = a;
+            genre = g;
+            isRead = r;
+        }
         // getters
         string getTitle() const {
             return title;

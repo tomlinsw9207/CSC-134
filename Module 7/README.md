@@ -28,27 +28,8 @@ Core Functionality:
 
 Create a structure (like a struct or a class) to represent a book with attributes such as title, author, genre, read status, and optional fields for lexile level and word count.
 
-Allow users to input and store book details in a collection (e.g., a std::vector or std::list).
 
-Sorting:
-
-Implement a function to alphabetize the collection of books by the author’s name using std::sort.
-
-Later, you can extend this to sort by other attributes like genre, lexile level, or word count if you choose to.
-
-Categorization:
-
-Use the genre and read status fields to group or filter the books. For example, you could display a list of all unread mystery books.
-
-Adding New Books:
-
-Write functionality to add books dynamically to the collection without overwriting existing data.
-
-Optional Features:
-
-If you want to include lexile level and word count later, you can always revisit and expand your program.
-
-OPTION 1
+POTENTIAL LAYOUT 
 
 #include <iostream>
 #include <vector>
@@ -134,151 +115,13 @@ int main() {
 
 
 
-OPTION 2
-
-
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <string>
-
-using namespace std; // Simplifies syntax
-
-// Define the Book class
-class Book {
-private:
-    string title;
-    string author;
-    string genre;
-    bool isRead;
-
-public:
-    // Constructor
-    Book(string t, string a, string g, bool r) : title(t), author(a), genre(g), isRead(r) {}
-
-    // Getter functions
-    string getTitle() const { return title; }
-    string getAuthor() const { return author; }
-    string getGenre() const { return genre; }
-    bool getIsRead() const { return isRead; }
-
-    // Display book details
-    void displayBook() const {
-        cout << "Title: " << title
-             << ", Author: " << author
-             << ", Genre: " << genre
-             << ", Read: " << (isRead ? "Yes" : "No") << "\n";
-    }
-};
-
-// Function to display the list of books
-void displayBooks(const vector<Book>& books) {
-    cout << "\nList of Books:\n";
-    for (const auto& book : books) {
-        book.displayBook();
-    }
-}
-
-// Function to add a new book
-void addBook(vector<Book>& books) {
-    string title, author, genre;
-    bool isRead;
-
-    cout << "Enter title: ";
-    cin.ignore(); // Clear the input buffer
-    getline(cin, title);
-    cout << "Enter author: ";
-    getline(cin, author);
-    cout << "Enter genre: ";
-    getline(cin, genre);
-    cout << "Have you read this book? (1 for Yes, 0 for No): ";
-    cin >> isRead;
-
-    books.emplace_back(title, author, genre, isRead); // Use constructor to create a Book object
-    cout << "Book added successfully!\n";
-}
-
-// Function to sort books by author name
-void sortBooksByAuthor(vector<Book>& books) {
-    sort(books.begin(), books.end(), [](const Book& a, const Book& b) {
-        return a.getAuthor() < b.getAuthor();
-    });
-    cout << "Books sorted by author name.\n";
-}
-
-int main() {
-    vector<Book> books;
-    int choice;
-
-    do {
-        cout << "\nBook Catalog Menu:\n";
-        cout << "1. Add a Book\n2. Display Books\n3. Sort Books by Author\n4. Exit\n";
-        cout << "Enter your choice: ";
-        cin >> choice;
-
-        switch (choice) {
-        case 1:
-            addBook(books);
-            break;
-        case 2:
-            displayBooks(books);
-            break;
-        case 3:
-            sortBooksByAuthor(books);
-            break;
-        case 4:
-            cout << "Exiting program. Goodbye!\n";
-            break;
-        default:
-            cout << "Invalid choice. Please try again.\n";
-        }
-    } while (choice != 4);
-
-    return 0;
-}
-
-
-
 copilot help
 
 PROMPT: 
 How would I edit previously entered data from the main program instead of going through the .txt file?
 
-RESPONSE:
 
-void editBook(vector<Book>& books) {
-    string searchTitle;
-    cout << "Enter the title of the book you want to edit: ";
-    cin.ignore();
-    getline(cin, searchTitle);
-
-    for (auto& book : books) {
-        if (book.title == searchTitle) {
-            cout << "Editing book: " << book.title << "\n";
-            cout << "Enter new author's last name (or press Enter to keep current): ";
-            string newAuthor;
-            getline(cin, newAuthor);
-            if (!newAuthor.empty()) book.authorLastName = newAuthor;
-
-            cout << "Enter new genre (or press Enter to keep current): ";
-            string newGenre;
-            getline(cin, newGenre);
-            if (!newGenre.empty()) book.genre = newGenre;
-
-            cout << "Have you read this book? (1 for Yes, 0 for No): ";
-            cin >> book.isRead;
-
-            cout << "Book updated successfully!\n";
-            return;
-        }
-    }
-    cout << "Book not found.\n";
-}
-
-to save changes you would use saveBooks(books, filename);
-
-
-DRAFT THING?
+POTENTIAL LAYOUT THING?
 
 #include <iostream>
 #include <vector>
@@ -505,3 +348,5 @@ int main() {
 
     return 0;
 }
+
+
