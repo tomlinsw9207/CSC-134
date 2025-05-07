@@ -107,6 +107,7 @@ void addBook(vector<Book>& books) {
 
     cout << "Enter book title: ";
     string title;
+    cin.ignore();
     getline(cin, title);
     cout << endl;
     cout << "Enter author last name: ";
