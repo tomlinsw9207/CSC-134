@@ -96,17 +96,53 @@ void loadBooks(vector<Book>& books, const string& library) {
     }
     file.close();
 }
-// TODO: set up main menu with input validation
-// finish pseudo code for the rest of the program
-int main(){
-
-    // MENU GOES HERE
-
-    // add new book
-    // edit existing book
-    // display all books(does so alphabetically)
-    // display books that are read or unread
-    // save data and exit program
 
 
+int main() {
+
+    vector<Book> books;
+    string library = "library.txt";
+    loadBooks(books, library);
+
+    // MENU BEGINS HERE
+    int choice;
+    bool keepgoing = true;
+
+    while (keepgoing == true) {
+
+        cout << "LEE'S LIBRARY" << endl;
+        cout << endl;
+        cout << "1. Add new book" << endl;
+        cout << "2. Edit existing book" << endl;
+        cout << "3. Display all books" << endl;
+        cout << "4. Display all books by read status" << endl;
+        cout << "5. Save & exit" << endl;
+        cout << "Selection: ";
+        cin >> choice;
+        cout << endl;
+
+        if (choice == 1) {
+            // add new book
+        }
+        else if (choice == 2) {
+            // edit existing book
+        }
+        else if (choice == 3) {
+            // display all books (alphabetically)
+        }
+        else if (choice == 4) {
+            // display all books that are read or unread
+        }
+        else if (choice == 5) {
+            // save data and exit program
+            saveBooks(books, library);
+            cout << "Books are saved! See ya!" << endl;
+            keepgoing = false;
+        }
+        else {
+            cout << "That ain't a valid option! Try again pookie <3" << endl;
+        }
+    }
+    
+return 0;
 }
