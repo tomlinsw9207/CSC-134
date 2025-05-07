@@ -217,7 +217,7 @@ int main() {
             int readStatus;
             cout << "1. Read books" << endl;
             cout << "0. Unread books" << endl;
-            cout << " ";
+            cout << "Enter Selection: ";
             cin >> readStatus;
             displayByReadStatus(books, readStatus == 1);
         }
