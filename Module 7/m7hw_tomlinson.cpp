@@ -100,5 +100,13 @@ void loadBooks(vector<Book>& books, const string& library) {
 // finish pseudo code for the rest of the program
 int main(){
 
+    // MENU GOES HERE
+
+    // add new book
+    // edit existing book
+    // display all books(does so alphabetically)
+    // display books that are read or unread
+    // save data and exit program
+
 
 }
