@@ -101,7 +101,7 @@ void loadBooks(vector<Book>& books, const string& library) {
     file.close();
 }
 
-// add new book
+// add new book [WORKS]
 void addBook(vector<Book>& books) {
     bool isRead;
 
@@ -165,6 +165,16 @@ void displaySortedByAuthor(vector<Book>& books) {
     }
 }
 
+// display read and unread books [REFORMAT THIS PLEASEEE]
+void displayByReadStatus(const vector<Book>& books, bool showRead) {
+    cout << (showRead ? "\nRead books:\n" : "\nUnread books:\n");
+    for (const auto& book : books) {
+        if (book.getReadStatus() == showRead) {
+            book.displayBook();
+        }
+    }
+}
+
 
 int main() {
 
@@ -178,6 +188,7 @@ int main() {
 
     while (keepgoing == true) {
 
+        cout << endl;
         cout << "LEE'S LIBRARY" << endl;
         cout << endl;
         cout << "1. Add new book" << endl;
@@ -203,6 +214,12 @@ int main() {
         }
         else if (choice == 4) {
             // displays all books that are read or unread
+            int readStatus;
+            cout << "1. Read books" << endl;
+            cout << "0. Unread books" << endl;
+            cout << " ";
+            cin >> readStatus;
+            displayByReadStatus(books, readStatus == 1);
         }
         else if (choice == 5) {
             // saves data and exit program
