@@ -165,7 +165,7 @@ void displaySortedByAuthor(vector<Book>& books) {
     }
 }
 
-// display read and unread books [REFORMAT THIS PLEASEEE]
+// display read and unread books [REFORMAT THIS PLEASEEE AND HAVE IT AUTO SORT ALPHABETICALLY?]
 void displayByReadStatus(const vector<Book>& books, bool showRead) {
     cout << (showRead ? "\nRead books:\n" : "\nUnread books:\n");
     for (const auto& book : books) {
