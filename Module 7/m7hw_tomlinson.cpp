@@ -13,6 +13,7 @@
 #include <algorithm>
 #include <string>
 #include <sstream>
+#include <fstream>
 
 using namespace std;
 
@@ -77,6 +78,24 @@ class Book {
         }
 };
 
+// save new books to file
+void saveBooks(const vector<Book>& books, const string& library) {
+    ofstream file(library);
+    for (const auto& book : books) {
+        file << book.toFileString() << endl;
+    }
+    file.close();
+}
+
+// Load books from a .txt file
+void loadBooks(vector<Book>& books, const string& library) {
+    ifstream file(library);
+    string line;
+    while (getline(file, line)) {
+        books.push_back(Book::fromFileString(line));
+    }
+    file.close();
+}
 // TODO: set up main menu with input validation
 // finish pseudo code for the rest of the program
 int main(){
