@@ -108,15 +108,15 @@ void addBook(vector<Book>& books) {
     cout << "Enter book title: ";
     string title;
     getline(cin, title);
-
+    cout << endl;
     cout << "Enter author last name: ";
     string author;
     getline(cin, author);
-
+    cout << endl;
     cout << "Enter genre: ";
     string genre;
     getline(cin, genre);
-    
+    cout << endl;
     cout << "Mark this read? (1 for read, 0 for unread): ";
     cin >> isRead;
 
