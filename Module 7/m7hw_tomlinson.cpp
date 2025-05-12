@@ -137,9 +137,7 @@ void editBook(vector<Book>& books) {
     string searchTitle;
     cin.ignore();
     getline(cin, searchTitle);
-
     searchTitle = Book::trim(searchTitle);
-
 
     for (auto& book : books) {
         if (Book::trim(book.getTitle()) == searchTitle) {
