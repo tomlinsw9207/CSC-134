@@ -128,6 +128,7 @@ void addBook(vector<Book>& books) {
 void editBook(vector<Book>& books) {
     string searchTitle;
     cout << "Enter title of the book you want to edit: ";
+    cin.ignore();
     getline(cin, searchTitle);
 
     for (auto& book : books) {
@@ -135,6 +136,7 @@ void editBook(vector<Book>& books) {
             cout << "Editing book: " << book.getTitle() << endl;
             cout << "Edit author's last name (press Enter to keep current): ";
             string newAuthor;
+            cin.ignore();
             getline(cin, newAuthor);
             if (!newAuthor.empty()) book.setAuthorLastName(newAuthor);
 
