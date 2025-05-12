@@ -62,18 +62,25 @@ class Book {
         string toFileString() const {
             return title + " | " + authorLastName + " | " + genre + " | " + (isRead ? "1" : "0");
         }
+        // trims spaces back and forth from txt and string
+        static string trim(const string& str) {
+        size_t first = str.find_first_not_of(" \t\n\r");
+        size_t last = str.find_last_not_of(" \t\n\r");
+        return (first == string::npos || last == string::npos) ? "" : str.substr(first, last - first + 1);
+        }
         // file string to object conversion
         static Book fromFileString(const string& line) {
-            string title, author, genre;
-            bool isRead;
-            stringstream ss(line);
-            getline(ss, title, '|');
-            getline(ss, author, '|');
-            getline(ss, genre, '|');
-            int readInt;
-            ss >> readInt;
-            isRead = (readInt==1);
-            return Book(title, author, genre, isRead);
+        string title, author, genre;
+        bool isRead;
+        stringstream ss(line);
+        getline(ss, title, '|');
+        getline(ss, author, '|');
+        getline(ss, genre, '|');
+        int readInt;
+        ss >> readInt;
+        isRead = (readInt == 1);
+        
+        return Book(trim(title), trim(author), trim(genre), isRead);
         }
         // display book details
         void displayBook() const {
@@ -126,14 +133,21 @@ void addBook(vector<Book>& books) {
 
 // Edit existing book
 void editBook(vector<Book>& books) {
-    string searchTitle;
     cout << "Enter title of the book you want to edit: ";
+    string searchTitle;
     cin.ignore();
     getline(cin, searchTitle);
 
+    searchTitle = Book::trim(searchTitle);
+
+
     for (auto& book : books) {
-        if (book.getTitle() == searchTitle) {
-            cout << "Editing book: " << book.getTitle() << endl;
+
+    cout << "Searching for: " << searchTitle << endl;
+    cout << "Current book: " << book.getTitle();
+
+        if (Book::trim(book.getTitle()) == searchTitle) {
+            cout << "Editing book: " << book.getTitle() << "\n";
             cout << "Edit author's last name (press Enter to keep current): ";
             string newAuthor;
             cin.ignore();
