@@ -142,10 +142,6 @@ void editBook(vector<Book>& books) {
 
 
     for (auto& book : books) {
-
-    cout << "Searching for: " << searchTitle << endl;
-    cout << "Current book: " << book.getTitle();
-
         if (Book::trim(book.getTitle()) == searchTitle) {
             cout << "Editing book: " << book.getTitle() << "\n";
             cout << "Edit author's last name (press Enter to keep current): ";
