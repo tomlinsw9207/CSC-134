@@ -1,11 +1,22 @@
 Purple Hibiscus | Adichie | Fiction | 1
 The Power | Alderman | Sci-fi | 1
 I, Robot | Asimov | Sci-fi | 1
+Hell Bent | Bardugo | Fiction | 1
+Ninth House | Bardugo | Fiction | 1
+Mockingjay | Collins | Fiction | 1
+Catching Fire | Collins | Fiction | 1
 No Longer Human | Dazai | Fiction | 1
+Dear Evan Hansen | Emmich | Fiction | 1
 The Scarlet Letter | Hawthorne | Fiction | 1
 Brave New World | Huxley | Sci-fi | 0
+Five Feet Apart | Lippincott | Romance | 1
+White Fang | London | Fiction | 0
+The Song of Achilles | Miller | Fiction | 1
+Anne of Green Gables | Montgomery | Fiction | 1
 The Bell Jar | Plath | Autobiography | 1
-The Grapes of Wrath | Steinbeck | Fiction | 1
+Miss Peregrine's Home For Peculiar Children | Riggs | Fiction | 0
 Of Mice and Men | Steinbeck | Fiction | 1
+The Grapes of Wrath | Steinbeck | Fiction | 1
+Treasure Island | Stevenson | Fiction | 0
 Some Desperate Glory | Tesh | Sci-fi | 0
 Cutting for Stone | Verghese | Fiction | 0

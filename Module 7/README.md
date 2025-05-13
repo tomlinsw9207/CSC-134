@@ -377,4 +377,5 @@ Aspects/features to keep working on eventually
 -feature that allows each book up to three genres? (may not be useful for me honestly)
 -add code so that cin statements can have lower case and still be recognized
 -pop up menu...? (how on earth do i even do that?)
+-figure out way to add manga and comics so that its not a hot mess
 
