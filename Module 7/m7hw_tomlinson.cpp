@@ -5,7 +5,7 @@
 
 // at home library catalogue
 
-// TODO: Seperate objects and its functions from main()
+// TODO: Seperate objects and its functions from main()?
 // organize main(), .txt file for saving data, and seperate file for objects
 
 #include <iostream>
@@ -58,7 +58,7 @@ class Book {
             isRead = status;
         }
         
-        // string to file conversion [WIP]
+        // string to file conversion 
         string toFileString() const {
             return title + " | " + authorLastName + " | " + genre + " | " + (isRead ? "1" : "0");
         }
@@ -89,7 +89,7 @@ class Book {
         }
 };
 
-// save new books to file
+// save new books to library.txt
 void saveBooks(const vector<Book>& books, const string& library) {
     ofstream file(library);
     for (const auto& book : books) {
@@ -98,7 +98,7 @@ void saveBooks(const vector<Book>& books, const string& library) {
     file.close();
 }
 
-// Load books from library.txt file
+// Load books from library.txt 
 void loadBooks(vector<Book>& books, const string& library) {
     ifstream file(library);
     string line;
@@ -108,7 +108,7 @@ void loadBooks(vector<Book>& books, const string& library) {
     file.close();
 }
 
-// add new book [WORKS]
+// add new book 
 void addBook(vector<Book>& books) {
     bool isRead;
 
@@ -164,7 +164,7 @@ void editBook(vector<Book>& books) {
     }
     cout << "Book not found" << endl;
 }
-
+// sorts books before displaying
 void displaySortedByAuthor(vector<Book>& books) {
     cout << "Book Collection:" << endl;
     for (const auto& book : books) {
@@ -175,7 +175,7 @@ void displaySortedByAuthor(vector<Book>& books) {
     }
 }
 
-// display read and unread books [REFORMAT THIS PLEASEEE AND HAVE IT AUTO SORT ALPHABETICALLY?]
+// display read and unread books (only does it alphabetically if displayed all books first)
 void displayByReadStatus(const vector<Book>& books, bool showRead) {
     cout << (showRead ? "\nRead books:\n" : "\nUnread books:\n");
     for (const auto& book : books) {
@@ -185,9 +185,8 @@ void displayByReadStatus(const vector<Book>& books, bool showRead) {
     }
 }
 
-
 int main() {
-
+    // load books from library.txt file and employs the book vector
     vector<Book> books;
     string library = "library.txt";
     loadBooks(books, library);
@@ -219,7 +218,7 @@ int main() {
             editBook(books);
         }
         else if (choice == 3) {
-            // displays all books (alphabetically)
+            // displays all books alphabetically
             displaySortedByAuthor(books);
         }
         else if (choice == 4) {

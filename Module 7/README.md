@@ -36,7 +36,7 @@ POTENTIAL LAYOUT
 #include <algorithm>
 #include <string>
 
-using namespace std; // Added this line
+using namespace std;
 
 // Define the Book structure
 struct Book {
@@ -349,4 +349,32 @@ int main() {
     return 0;
 }
 
+// NOTES 5/8
+
+- selecting the edit book option wasnt working at all so I had to add cin.ignore twice to the function 
+- was able to type the book name finally but the program wasnt able to read the cin and match it to the object
+- asked co pilot for help
+
+CO PILOT HELP
+PROMPT: 
+ Im expecting it to call a book title from a .txt file and make changes to it, but when I type in the book title it tells me that there book doesn't exist, even though I know it is saved to the file because when I use another function to list my books the title is there.
+
+ RESPONSE: 
+Got it! Sounds like there might be an issue with how you're searching for the book title in the file. Maybe the way the data is being read or compared isn't quite right. Go ahead and share your code, and I'll help you troubleshoot it. We’ll figure it out together!
+
+I gave copilot the functions that convert the objects from strings to text and it suggested adding a trimming function and trimming when I call an object to edit. To troubleshoot I had a few cout statements that would repeat which object I was searching for and the one that the program called to see if they were matching. implementing the trim function made the editing function work!
+
+// NOTES 5/10
+
+Aspects/features to keep working on eventually
+-generally improve the graphic design so that its clearer to read
+-sort read and unread books alphabetically automatically [BIG PRIORITY]
+-clean up the formatting for the book editing function
+-save feature that keeps user in program so that data isn't potentially lost before the auto save and exit [BIG PRIORITY]
+-move object functions into their own file
+-feature that prevents user from accidentally inputting the same book twice [BIG PRIORITY]
+-feature that sorts by genre (use an array to predefine genres?)
+-feature that allows each book up to three genres? (may not be useful for me honestly)
+-add code so that cin statements can have lower case and still be recognized
+-pop up menu...? (how on earth do i even do that?)
 
