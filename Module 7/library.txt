@@ -1,22 +1,41 @@
 Purple Hibiscus | Adichie | Fiction | 1
 The Power | Alderman | Sci-fi | 1
+Politics | Aristotle | Non-fiction | 0
 I, Robot | Asimov | Sci-fi | 1
-Hell Bent | Bardugo | Fiction | 1
 Ninth House | Bardugo | Fiction | 1
-Mockingjay | Collins | Fiction | 1
+Hell Bent | Bardugo | Fiction | 1
+The Perks of Being a Wallflower | Chbosky | Fiction | 1
+On the Commonwealth | Cicero | Non-fiction | 0
+Cicero: Selected Works | Cicero | Non-fiction | 0
+The Trouble With Being Born | Cioran | Non-fiction | 0
 Catching Fire | Collins | Fiction | 1
+Mockingjay | Collins | Fiction | 1
 No Longer Human | Dazai | Fiction | 1
 Dear Evan Hansen | Emmich | Fiction | 1
+Women Who Run With the Wolves | Estes | Non-fiction | 0
+The Tipping Point | Gladwell | Non-fiction | 1
 The Scarlet Letter | Hawthorne | Fiction | 1
 Brave New World | Huxley | Sci-fi | 0
 Five Feet Apart | Lippincott | Romance | 1
 White Fang | London | Fiction | 0
+The Road | McCarthy | Sci-fi | 0
 The Song of Achilles | Miller | Fiction | 1
 Anne of Green Gables | Montgomery | Fiction | 1
+The Woman With a Worm in Her Head | Nagami | Non-fiction | 0
 The Bell Jar | Plath | Autobiography | 1
+Republic | Plato | Non-fiction | 0
 Miss Peregrine's Home For Peculiar Children | Riggs | Fiction | 0
-Of Mice and Men | Steinbeck | Fiction | 1
+Gender and Our Brains | Rippon | Non-fiction | 0
+The Mastery of Love | Ruiz | Non-fiction | 0
+The Voice of Knowledge | Ruiz | Non-fiction | 0
+The Four Agreements | Ruiz | Non-Fiction | 1
+Shanghai Girls | See | Fiction | 1
+The House of God | Shem | Fiction | 0
 The Grapes of Wrath | Steinbeck | Fiction | 1
+Of Mice and Men | Steinbeck | Fiction | 1
 Treasure Island | Stevenson | Fiction | 0
 Some Desperate Glory | Tesh | Sci-fi | 0
 Cutting for Stone | Verghese | Fiction | 0
+Two Old Women | Wallis | Fiction | 0
+The Martian | Weir | Sci-fi | 1
+Project Hail Mary | Weir | Sci-fi | 1
