@@ -5,8 +5,7 @@
 
 // at home library catalogue
 
-// TODO: Seperate objects and its functions from main()?
-// organize main(), .txt file for saving data, and seperate file for objects
+// TODO: Seperate class and its functions from main()-- eventually!
 
 #include <iostream>
 #include <vector>
@@ -14,7 +13,6 @@
 #include <string>
 #include <sstream>
 #include <fstream>
-
 using namespace std;
 
 class Book {
@@ -62,7 +60,7 @@ class Book {
         string toFileString() const {
             return title + " | " + authorLastName + " | " + genre + " | " + (isRead ? "1" : "0");
         }
-        // trims spaces back and forth from txt and string
+        // trims spaces back and forth from txt and string [learn more about this]
         static string trim(const string& str) {
         size_t first = str.find_first_not_of(" \t\n\r");
         size_t last = str.find_last_not_of(" \t\n\r");
@@ -79,7 +77,7 @@ class Book {
         int readInt;
         ss >> readInt;
         isRead = (readInt == 1);
-        
+        // makes sure the whitespaces don't throw off getter/setter functions 
         return Book(trim(title), trim(author), trim(genre), isRead);
         }
         // display book details
@@ -88,7 +86,6 @@ class Book {
             << ", Read: " << (isRead ? "Yes" : "No" ) << endl;
         }
 };
-
 // save new books to library.txt
 void saveBooks(const vector<Book>& books, const string& library) {
     ofstream file(library);
@@ -97,7 +94,6 @@ void saveBooks(const vector<Book>& books, const string& library) {
     }
     file.close();
 }
-
 // Load books from library.txt 
 void loadBooks(vector<Book>& books, const string& library) {
     ifstream file(library);
@@ -107,7 +103,6 @@ void loadBooks(vector<Book>& books, const string& library) {
     }
     file.close();
 }
-
 // add new book 
 void addBook(vector<Book>& books) {
     bool isRead;
@@ -130,7 +125,6 @@ void addBook(vector<Book>& books) {
 
     books.emplace_back(title, author, genre, isRead);
 }
-
 // Edit existing book
 void editBook(vector<Book>& books) {
     cout << "Enter title of the book you want to edit: ";
@@ -174,7 +168,6 @@ void displaySortedByAuthor(vector<Book>& books) {
         book.displayBook();
     }
 }
-
 // display read and unread books (only does it alphabetically if displayed all books first)
 void displayByReadStatus(const vector<Book>& books, bool showRead) {
     cout << (showRead ? "\nRead books:\n" : "\nUnread books:\n");
