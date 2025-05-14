@@ -32,14 +32,16 @@ A Long Walk to Water | Park | Fiction | 1
 The Bell Jar | Plath | Autobiography | 1
 Republic | Plato | Non-fiction | 0
 Miss Peregrine's Home For Peculiar Children | Riggs | Fiction | 0
-The Blood of Olympus | Riordan | Fiction | 1
-The House of Hades | Riordan | Fiction | 1
+The Sea of Monsters | Riordan | Fiction | 1
 The Mark of Athena | Riordan | Fiction | 1
+The Blood of Olympus | Riordan | Fiction | 1
 The Son of Neptune | Riordan | Fiction | 1
+The Lightning Thief | Riordan | Fiction | 1
 The Lost Hero | Riordan | Fiction | 1
+The House of Hades | Riordan | Fiction | 1
 Gender and Our Brains | Rippon | Non-fiction | 0
-The Voice of Knowledge | Ruiz | Non-fiction | 0
 The Four Agreements | Ruiz | Non-Fiction | 1
+The Voice of Knowledge | Ruiz | Non-fiction | 0
 The Mastery of Love | Ruiz | Non-fiction | 0
 Shanghai Girls | See | Fiction | 1
 The House of God | Shem | Fiction | 0
@@ -54,4 +56,3 @@ The Martian | Weir | Sci-fi | 1
 Project Hail Mary | Weir | Sci-fi | 1
 Night | Wiesel | Non-fiction | 1
 The Book Thief | Zusak | Fiction | 0
-The Lightning Thief | Riordan | Fiction | 1
