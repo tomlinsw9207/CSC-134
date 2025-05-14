@@ -114,8 +114,7 @@ int main() {
 }
 
 
-
-copilot help
+CO PILOT HELP
 
 PROMPT: 
 How would I edit previously entered data from the main program instead of going through the .txt file?
